@@ -177,6 +177,26 @@ section { padding-block: clamp(3.8rem, 8vw, 6.5rem); }
 .demo-switch .lab { font-family: var(--font-head); font-weight: 700; font-size: 0.95rem; color: #c3cbdd; }
 .demo-switch.on .lab { color: var(--hl); }
 
+/* ---------- Story / testimonial ---------- */
+.story { background: var(--paper); }
+.story-grid { display: grid; gap: 2.5rem; grid-template-columns: 1.2fr 1fr; align-items: center; }
+@media (max-width: 860px) { .story-grid { grid-template-columns: 1fr; } }
+.story .quotemark { font-family: var(--font-head); font-size: 4rem; line-height: 0.6; color: var(--blue); }
+.story blockquote { font-family: var(--font-head); font-weight: 500; font-size: clamp(1.25rem, 2.6vw, 1.7rem); line-height: 1.35; letter-spacing: -0.01em; }
+.story blockquote .hl { background: var(--hl-soft); padding: 0 0.15em; border-radius: 3px; }
+.story .attr { margin-top: 1.3rem; display: flex; align-items: center; gap: 0.9rem; }
+.story .attr .avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--ink); color: #fff; display: grid; place-items: center; font-family: var(--font-head); font-weight: 700; flex: none; }
+.story .attr .who { font-weight: 600; font-size: 0.95rem; }
+.story .attr .role { color: var(--soft); font-size: 0.88rem; }
+.story .narrative p { color: var(--soft); margin-top: 1rem; max-width: 46ch; }
+.result-chips { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.4rem; }
+.result-chips span {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: var(--font-head); font-weight: 700; font-size: 0.92rem;
+  background: var(--card); border: 1.5px solid var(--ink); border-radius: 999px; padding: 0.5rem 1rem;
+}
+.result-chips svg { width: 15px; height: 15px; color: var(--blue); }
+
 /* ---------- Services ---------- */
 .svc-grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 .svc {
@@ -266,12 +286,14 @@ footer .fine { font-size: 0.87rem; color: var(--soft); }
 footer a { color: var(--blue); text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 
-/* ---------- Reveal ---------- */
-.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.6s ease, transform 0.6s ease; }
-.reveal.in { opacity: 1; transform: none; }
+/* ---------- Reveal ----------
+   Only hide content when JS is confirmed running (html.js).
+   If the script is blocked or fails, everything stays visible. */
+html.js .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.6s ease, transform 0.6s ease; }
+html.js .reveal.in { opacity: 1; transform: none; }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; transition: none; }
+  html.js .reveal { opacity: 1; transform: none; transition: none; }
   .hero h1 .hl-word::after { animation: none; transform: scaleX(1); }
   html { scroll-behavior: auto; }
 }

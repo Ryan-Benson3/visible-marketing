@@ -31,6 +31,7 @@
   }
 
   /* ---------- Scroll reveal ---------- */
+  const revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && !reduced) {
     const io = new IntersectionObserver(
       (entries) => entries.forEach((en) => {
@@ -38,8 +39,10 @@
       }),
       { threshold: 0.15 }
     );
-    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    revealEls.forEach((el) => io.observe(el));
+    // Safety net: if anything is still hidden after 2.5s, show it
+    setTimeout(() => revealEls.forEach((el) => el.classList.add('in')), 2500);
   } else {
-    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in'));
+    revealEls.forEach((el) => el.classList.add('in'));
   }
 })();
