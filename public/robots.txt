@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://visiblemarketing.pages.dev/sitemap-index.xml

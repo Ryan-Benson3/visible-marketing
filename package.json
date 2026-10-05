@@ -1,0 +1,15 @@
+{
+  "name": "visible-marketing",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Visible Marketing — local marketing you own. Websites and local search for service businesses and property managers.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^7.2.6",
+    "@astrojs/sitemap": "^3.4.0"
+  }
+}

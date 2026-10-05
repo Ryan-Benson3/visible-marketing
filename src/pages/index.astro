@@ -1,0 +1,393 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const check = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+---
+
+<Layout title="Visible Marketing — Local marketing you actually own" description="Visible Marketing builds fast websites and local search presence for service businesses and property managers. You own everything: your domain, your site, your accounts, your data. No lock-in. No jargon. No hostage-taking.">
+  <!-- ================= Header ================= -->
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="logo" href="/" aria-label="Visible Marketing home">
+        <span class="mark">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M6 8l10 17L26 8" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="dot-accent" aria-hidden="true"></span>
+        </span>
+        Visible&nbsp;Marketing
+      </a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#who">Who we help</a>
+        <a href="#different">Why us</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="#contact">Free visibility check</a>
+    </div>
+  </header>
+
+  <!-- ================= Hero ================= -->
+  <section class="hero" id="main">
+    <div class="wrap">
+      <p class="kicker">Local marketing, owned by you</p>
+      <h1>Be <span class="hl-word">visible</span> where your customers are already looking.</h1>
+      <p class="lede">
+        We build fast websites and local search presence for service businesses and
+        property managers — then hand you the keys to everything. No lock-in.
+        No jargon. No hostage-taking.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contact">Get a free visibility check</a>
+        <a class="btn btn-ghost" href="#different">What makes us different</a>
+      </div>
+      <div class="proof-strip">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" stroke-linecap="round"/></svg>You own every account and asset</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" stroke-linecap="round"/></svg>30-day cancel, always</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" stroke-linecap="round"/></svg>Reports in plain English: calls and jobs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Who we help ================= -->
+  <section id="who">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Who we help</p>
+        <h2>Two kinds of busy. One job: get found.</h2>
+      </div>
+      <div class="audience">
+        <div class="aud-card business reveal">
+          <span class="tag">Service businesses</span>
+          <h3>When the phone rings, you eat.</h3>
+          <p>
+            Someone's water heater dies at 6&nbsp;a.m. They search, they call, they hire
+            whoever shows up first. We make sure that's you — and that they find a site
+            that makes calling feel safe.
+          </p>
+          <ul>
+            <li>A fast website that turns visits into calls</li>
+            <li>Google Business Profile tuned for the map pack</li>
+            <li>A review engine that builds trust on autopilot</li>
+            <li>Reports that show booked jobs, not vanity clicks</li>
+          </ul>
+        </div>
+        <div class="aud-card property reveal">
+          <span class="tag">Property managers</span>
+          <h3>Empty units cost money every day.</h3>
+          <p>
+            Renters and owners both Google you before they sign. We keep your listings
+            in front of the right people and your reputation spotless — so properties
+            fill faster and owners renew longer.
+          </p>
+          <ul>
+            <li>Property and listing pages that rank and convert</li>
+            <li>Review response that protects your reputation</li>
+            <li>Local search coverage across every market you manage</li>
+            <li>Owner-ready reporting you can forward as-is</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Invisible → Visible demo ================= -->
+  <section class="demo-section" id="demo">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">The whole point</p>
+        <h2>From invisible to obvious.</h2>
+        <p>This is what we do, in one switch. Flip it.</p>
+      </div>
+      <div class="demo-wrap reveal">
+        <div>
+          <div class="serpcard state-invisible" data-demo-card aria-live="polite">
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              plumbers near me
+            </h3>
+            <div class="row you">
+              <div class="thumb">🔧</div>
+              <div>
+                <div class="who">Your Business</div>
+                <div class="stars">★★★★★ <span style="color:#8e9ab5">4.9</span></div>
+                <div class="meta">Open now · Serves your area</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="thumb">🚰</div>
+              <div>
+                <div class="who">Competitor A</div>
+                <div class="meta">Open now · 0.4 mi</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="thumb">🛠️</div>
+              <div>
+                <div class="who">Competitor B</div>
+                <div class="meta">Closes 5pm · 1.2 mi</div>
+              </div>
+            </div>
+            <span class="flag">← nobody finds you like this</span>
+          </div>
+        </div>
+        <div class="demo-switch" data-demo-switch role="switch" tabindex="0" aria-pressed="false" aria-label="Toggle between invisible and visible">
+          <div class="switch"></div>
+          <span class="lab">Invisible</span>
+        </div>
+        <div>
+          <div class="serpcard state-invisible" aria-hidden="true">
+            <h3 style="opacity:.85">what changes</h3>
+            <ul style="list-style:none; display:grid; gap:.8rem; font-size:.95rem; color:#c3cbdd;">
+              <li>✦ Your profile claims the map pack spot</li>
+              <li>✦ Reviews and ratings do the selling</li>
+              <li>✦ Your site is the first thing they see</li>
+              <li>✦ The call goes to you — not the other guy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Services ================= -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">What we do</p>
+        <h2>Everything local. Nothing you don't need.</h2>
+      </div>
+      <div class="svc-grid">
+        <div class="svc reveal">
+          <div class="ico">🖥️</div>
+          <h3>Websites</h3>
+          <p>Fast, professional sites built to convert visits into calls. Built on platforms you can take anywhere — because you own them.</p>
+        </div>
+        <div class="svc reveal">
+          <div class="ico">📍</div>
+          <h3>Local SEO &amp; Google Business Profile</h3>
+          <p>Map pack rankings, city pages, and a profile that actually gets maintained — photos, posts, services, questions answered.</p>
+        </div>
+        <div class="svc reveal">
+          <div class="ico">🎯</div>
+          <h3>Google Ads</h3>
+          <p>Campaigns managed in your own account, billed directly to you. Your data and history stay yours if we ever part ways.</p>
+        </div>
+        <div class="svc reveal">
+          <div class="ico">⭐</div>
+          <h3>Reviews &amp; reputation</h3>
+          <p>A system that quietly asks happy customers for reviews — and a plan for responding to the unhappy ones before they fester.</p>
+        </div>
+        <div class="svc reveal">
+          <div class="ico">🤖</div>
+          <h3>AI search visibility</h3>
+          <p>People now ask ChatGPT and AI assistants who to hire. We make sure your business is what they get told about.</p>
+        </div>
+        <div class="svc reveal">
+          <div class="ico">📞</div>
+          <h3>Call tracking &amp; reporting</h3>
+          <p>Know which efforts produce calls and booked jobs. Plain-English monthly reports — no impressions-as-progress nonsense.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Differentiators ================= -->
+  <section class="diff" id="different">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Why we're different</p>
+        <h2>Most agencies hold you hostage. We hand you the keys.</h2>
+      </div>
+      <div class="diff-grid">
+        <div class="diff-item reveal">
+          <span class="n">1</span>
+          <div>
+            <h3>You own everything</h3>
+            <p>Domain, website, ad accounts, analytics, reviews, data — all in your name from day one. Leave anytime and take every bit of it with you. No buyout fees, ever.</p>
+          </div>
+        </div>
+        <div class="diff-item reveal">
+          <span class="n">2</span>
+          <div>
+            <h3>No long-term contracts</h3>
+            <p>Month to month. Thirty days' notice and you're out — which means we have to earn your business every single month.</p>
+          </div>
+        </div>
+        <div class="diff-item reveal">
+          <span class="n">3</span>
+          <div>
+            <h3>Plain-English reports</h3>
+            <p>Calls, leads, booked jobs. Not impressions, not "reach," not charts designed to confuse. You'll know exactly what your money did.</p>
+          </div>
+        </div>
+        <div class="diff-item reveal">
+          <span class="n">4</span>
+          <div>
+            <h3>One business per trade, per area</h3>
+            <p>We don't sell the same plan to your competitor down the street. When you're our plumber in your market, you're the only one.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Process ================= -->
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">How it works</p>
+        <h2>From first call to first report.</h2>
+      </div>
+      <div class="proc">
+        <div class="p-card reveal">
+          <h3>Visibility check</h3>
+          <p>We look at where you stand in search, maps, reviews, and AI answers — and tell you straight what's winnable and what isn't.</p>
+          <span class="when">Day 1 · free</span>
+        </div>
+        <div class="p-card reveal">
+          <h3>Foundation</h3>
+          <p>Profiles claimed and tuned, tracking installed, keywords and competitors mapped. The boring plumbing that everything else depends on.</p>
+          <span class="when">Week 1</span>
+        </div>
+        <div class="p-card reveal">
+          <h3>Launch</h3>
+          <p>Site live or rebuilt, ads running if that's the plan, review system switched on. Your business starts showing up where it wasn't.</p>
+          <span class="when">Weeks 2–4</span>
+        </div>
+        <div class="p-card reveal">
+          <h3>Monthly walk-through</h3>
+          <p>A real report and a real conversation: what worked, what didn't, what's next. Adjust and repeat.</p>
+          <span class="when">Every month</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Pricing ================= -->
+  <section class="diff" id="pricing">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-inline:auto; text-align:center; max-width: 560px;">
+        <p class="eyebrow">Pricing</p>
+        <h2>Simple monthly plans. Cancel with 30 days' notice.</h2>
+      </div>
+      <div class="price-grid">
+        <div class="price reveal">
+          <div class="plan">Starter</div>
+          <div class="amount">$750<span style="font-size:1rem">/mo</span></div>
+          <div class="per">For businesses getting their local presence in order</div>
+          <ul>
+            <li>{check} Google Business Profile management</li>
+            <li>{check} Local SEO: citations, listings, on-page basics</li>
+            <li>{check} Monthly plain-English report</li>
+          </ul>
+          <a class="btn btn-ghost" href="#contact">Start with Starter</a>
+        </div>
+        <div class="price featured reveal">
+          <span class="badge">Most popular</span>
+          <div class="plan">Professional</div>
+          <div class="amount">$1,500<span style="font-size:1rem">/mo</span></div>
+          <div class="per">For businesses ready to own their market</div>
+          <ul>
+            <li>{check} Everything in Starter</li>
+            <li>{check} Content and city pages that rank</li>
+            <li>{check} Review generation system</li>
+            <li>{check} Monthly strategy call</li>
+          </ul>
+          <a class="btn btn-primary" href="#contact">Go Professional</a>
+        </div>
+        <div class="price reveal">
+          <div class="plan">Premium</div>
+          <div class="amount">$2,500<span style="font-size:1rem">/mo</span></div>
+          <div class="per">For businesses that want it all handled</div>
+          <ul>
+            <li>{check} Everything in Professional</li>
+            <li>{check} Google Ads management</li>
+            <li>{check} Call tracking on every lead source</li>
+            <li>{check} Priority support</li>
+          </ul>
+          <a class="btn btn-ghost" href="#contact">Go Premium</a>
+        </div>
+      </div>
+      <p class="pricing-note">
+        Website builds are quoted as a one-time project price before any work starts.
+        Ad spend is paid directly to the ad platform — our management fee is separate and always
+        stated up front. No markup games.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Straight answers</p>
+        <h2>Questions we always get</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Do I really own my website and accounts?</summary>
+          <p>Yes — all of it, from day one. Domain, website files, Google Ads, Analytics, Business Profile: registered in your name, owned by you. We manage them; you keep them. If you ever leave, everything goes with you within seven days.</p>
+        </details>
+        <details>
+          <summary>Am I locked into a long contract?</summary>
+          <p>No. Everything is month to month with 30 days' notice to cancel. No exit fees, no buyouts, no "your site stays with us" games.</p>
+        </details>
+        <details>
+          <summary>Will you also work with my competitors?</summary>
+          <p>No. We take one business per trade per service area. When you're our client in your market, you're the only one.</p>
+        </details>
+        <details>
+          <summary>What do the reports actually show?</summary>
+          <p>Calls, leads, booked jobs, and where they came from — in plain English. If something didn't work, the report says that too. You'll never get a vanity-metrics smoke screen from us.</p>
+        </details>
+        <details>
+          <summary>How fast will I see results?</summary>
+          <p>Honest answer: profiles and paid ads can move in weeks; competitive local search takes months. The visibility check tells you which targets are realistic for your market before you spend a dollar.</p>
+        </details>
+        <details>
+          <summary>What's the difference between ad spend and your fee?</summary>
+          <p>Two separate costs, always stated up front. Ad spend goes straight to Google for the ads themselves — billed to you directly. Our management fee is what we charge to run them well.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta-box reveal">
+        <h2>Find out how <span class="hl">visible</span> you are.</h2>
+        <p>Send us your business name and city. You'll get a free visibility check — search, maps, reviews, and AI answers — with the two or three things worth fixing first.</p>
+        <div class="cta-row">
+          <!-- TODO: replace with real agency email/phone before launch -->
+          <a class="btn btn-primary" href="mailto:hello@visiblemarketing.co?subject=Free%20visibility%20check">Request your free check</a>
+          <a class="btn btn-ghost" href="#pricing">See pricing again</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <a class="logo" href="/" style="font-size:1.05rem">
+          <span class="mark" style="width:26px;height:26px">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" style="width:18px;height:18px">
+              <path d="M6 8l10 17L26 8" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          Visible Marketing
+        </a>
+        <p class="fine" style="margin-top:0.5rem">Local marketing you actually own.</p>
+      </div>
+      <div class="fine">
+        <a href="/llms.txt">llms.txt</a> · <a href="/sitemap-index.xml">Sitemap</a> ·
+        &copy; <span id="year">2026</span> Visible Marketing
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = String(new Date().getFullYear());</script>
+</Layout>
