@@ -1,5 +1,11 @@
 # Visible Marketing
 
+## 👉 [CLICK HERE TO VIEW THE ACTUAL WEBSITE](https://visiblemarketing.pages.dev) 👈
+
+That link above is the real, live website. Everything below this line is source code stuff — you don't need it to view the site.
+
+---
+
 Local marketing you actually own — websites and local search presence for service businesses and property managers. Built with **Astro 7**.
 
 ## Run it
