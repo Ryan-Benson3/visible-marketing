@@ -21,12 +21,17 @@
   const card = document.querySelector('[data-demo-card]');
   if (sw && card) {
     card.classList.add('state-invisible');
-    sw.addEventListener('click', () => {
+    const toggle = () => {
       const on = sw.classList.toggle('on');
       card.classList.toggle('state-visible', on);
       card.classList.toggle('state-invisible', !on);
       sw.querySelector('.lab').textContent = on ? 'Visible' : 'Invisible';
-      sw.setAttribute('aria-pressed', String(on));
+      sw.setAttribute('aria-checked', String(on));
+    };
+    sw.addEventListener('click', toggle);
+    // role="switch" on a div gets no key events for free — wire them ourselves
+    sw.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
     });
   }
 
